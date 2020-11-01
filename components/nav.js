@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const Nav = () => {
   return (
-    <nav tw="fixed bg-white w-full flex justify-center items-center">
+    <nav tw="bg-white w-full flex justify-center items-center">
       <div tw="w-4/5 py-4 flex flex-row justify-between items-center">
         <div>
           <img alt="COVID19 App Logo" src="/Logo.svg" tw="w-4/5" />
