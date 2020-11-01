@@ -3,7 +3,7 @@ import 'twin.macro'
 
 const Contagion = () => {
 	return (
-		<div tw="w-full h-auto flex justify-center">
+		<div tw="w-full h-auto flex justify-center py-12">
 			<div tw="w-4/5 flex flex-col justify-center items-center">
 				<div tw="w-1/2 flex flex-col justify-center items-center">
 					<StyledH2 smaller>Covid-19</StyledH2>

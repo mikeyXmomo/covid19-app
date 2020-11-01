@@ -3,7 +3,7 @@ import 'twin.macro'
 
 const Info = () => {
 	return (
-		<div tw="w-full h-auto bg-white flex justify-center items-center">
+		<div tw="w-full h-auto bg-white flex justify-center items-center py-12">
 			<div tw="w-4/5 flex justify-between items-center py-6">
 				<div tw="w-1/2 flex justify-center items-start">
 					<img src="/corona-virus.png" alt="Corona Virus Illustration" tw="w-5/6" />
