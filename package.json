@@ -1,5 +1,5 @@
 {
-  "name": "with-tailwindcss",
+  "name": "covid19-app",
   "version": "1.0.0",
   "scripts": {
     "dev": "next",
@@ -9,12 +9,23 @@
   "dependencies": {
     "next": "latest",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "styled-components": "^5.2.1",
+    "twin.macro": "^1.12.0"
   },
   "devDependencies": {
     "postcss-flexbugs-fixes": "4.2.1",
     "postcss-preset-env": "^6.7.0",
     "tailwindcss": "^1.7.4"
+  },
+  "babelMacros": {
+    "twin": {
+      "config": "tailwind.config.js",
+      "preset": "styled-components",
+      "debugProp": true,
+      "debugPlugins": false,
+      "debug": false
+    }
   },
   "license": "MIT"
 }

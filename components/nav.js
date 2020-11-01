@@ -1,29 +1,25 @@
-import Link from 'next/link'
+import 'twin.macro'
+import Image from 'next/image'
 
-const links = [
-  { href: 'https://github.com/vercel/next.js', label: 'GitHub' },
-  { href: 'https://nextjs.org/docs', label: 'Docs' },
-]
-
-export default function Nav() {
+const Nav = () => {
   return (
-    <nav>
-      <ul className="flex justify-between items-center p-8">
-        <li>
-          <Link href="/">
-            <a className="text-blue-500 no-underline">Home</a>
-          </Link>
-        </li>
-        <ul className="flex justify-between items-center space-x-4">
-          {links.map(({ href, label }) => (
-            <li key={`${href}${label}`}>
-              <a href={href} className="btn-blue no-underline">
-                {label}
-              </a>
-            </li>
-          ))}
-        </ul>
-      </ul>
+    <nav tw="fixed bg-white w-full flex justify-center items-center">
+      <div tw="w-4/5 py-4 flex flex-row justify-between items-center">
+        <div>
+          <img alt="COVID19 App Logo" src="/Logo.svg" tw="w-4/5" />
+        </div>
+        <div tw="flex flex-row space-x-6">
+          <ul tw="list-none flex flex-row justify-center items-center">
+            <li tw="text-lg px-4 text-green-999">Overview</li>
+            <li tw="text-lg px-4 text-green-999">Contagion</li>
+            <li tw="text-lg px-4 text-green-999">Symptoms</li>
+            <li tw="text-lg px-4 text-green-999">Prevention</li>
+          </ul>
+          <button tw="px-10 py-2 text-red-999 border text-lg font-medium border-red-999 rounded-full">Contact</button>
+        </div>
+      </div>
     </nav>
   )
 }
+
+export default Nav

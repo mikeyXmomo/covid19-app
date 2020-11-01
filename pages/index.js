@@ -1,14 +1,23 @@
-import Nav from '../components/nav'
+import Head from 'next/head';
+import { GlobalStyle } from '../components/GlobalStyle';
+import Hero from '../components/Hero';
+import Nav from '../components/Nav';
 
-export default function IndexPage() {
-  return (
-    <div>
+const index = () => {
+	return (
+		<>
+			<Head>
+				<title>COVID 19 Landing Page</title>
+				<link
+					href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700;900&display=swap"
+					rel="stylesheet"
+				/>
+			</Head>
+			<GlobalStyle />
       <Nav />
-      <div className="py-20">
-        <h1 className="text-5xl text-center text-accent-1">
-          Next.js + Tailwind CSS
-        </h1>
-      </div>
-    </div>
-  )
-}
+      <Hero />
+		</>
+	);
+};
+
+export default index;
