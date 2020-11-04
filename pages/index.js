@@ -1,10 +1,13 @@
 import Head from 'next/head';
 import Contagion from '../components/Contagion';
+import Footer from '../components/Footer';
 import { GlobalStyle } from '../components/GlobalStyle';
 import Hero from '../components/Hero';
 import Info from '../components/Info';
 import Nav from '../components/Nav';
 import Prevention from '../components/Prevention';
+import Question from '../components/Question';
+import Report from '../components/Report';
 import Symptomps from '../components/Symptomps';
 
 const index = () => {
@@ -24,6 +27,9 @@ const index = () => {
 			<Contagion />
 			<Symptomps />
 			<Prevention />
+			<Report />
+			<Question />
+			<Footer />
 		</>
 	);
 };
