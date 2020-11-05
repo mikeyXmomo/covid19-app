@@ -7,7 +7,7 @@ const Prevention = () => {
 	return (
 		<div tw="w-full h-auto flex justify-center items-center py-12">
 			<div tw="w-4/5 flex flex-col justify-center items-center">
-				<div tw="w-1/2 flex flex-col justify-center items-center">
+				<div tw="w-full md:w-1/2 flex flex-col justify-center items-center">
 					<StyledH2 smaller>COVID-19</StyledH2>
 					<StyledH1 smaller>What Should We Do</StyledH1>
 					<Subtitle>

@@ -3,12 +3,12 @@ import 'twin.macro';
 const Footer = () => {
 	return (
 		<footer tw="w-full h-auto flex justify-center items-center my-8">
-			<div tw="w-4/5 h-auto flex justify-between items-center">
-				<div>
+			<div tw="w-4/5 h-auto flex flex-col md:flex-row justify-between items-center">
+				<div className="my-4 md:my-0 flex items-center ">
 					<img alt="COVID19 App Logo" src="/Logo.svg" tw="w-4/5" />
 				</div>
 				<div>
-					<ul tw="list-none flex flex-row justify-center items-center">
+					<ul tw="list-none hidden md:flex flex-col md:flex-row justify-center items-center">
 						<li tw="text-base px-4 text-green-999">Overview</li>
 						<li tw="text-base px-4 text-green-999">Contagion</li>
 						<li tw="text-base px-4 text-green-999">Symptoms</li>
@@ -19,7 +19,7 @@ const Footer = () => {
 					<svg
 						role="img"
 						viewBox="0 0 24 24"
-						tw="w-6 h-6 mx-6 text-facebook fill-current"
+						tw="w-6 h-6 mx-4 md:mx-6 text-facebook fill-current"
 						xmlns="http://www.w3.org/2000/svg"
 					>
 						<title>Facebook icon</title>
@@ -29,7 +29,7 @@ const Footer = () => {
 						role="img"
 						xmlns="http://www.w3.org/2000/svg"
 						viewBox="0 0 24 24"
-						tw="w-6 h-6 mx-6 text-youtube fill-current"
+						tw="w-6 h-6 mx-4 md:mx-6 text-youtube fill-current"
 					>
 						<title>YouTube icon</title>
 						<path d="M23.495 6.205a3.007 3.007 0 0 0-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 0 0 .527 6.205a31.247 31.247 0 0 0-.522 5.805 31.247 31.247 0 0 0 .522 5.783 3.007 3.007 0 0 0 2.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 0 0 2.088-2.088 31.247 31.247 0 0 0 .5-5.783 31.247 31.247 0 0 0-.5-5.805zM9.609 15.601V8.408l6.264 3.602z" />
@@ -37,7 +37,7 @@ const Footer = () => {
 					<svg
 						role="img"
 						viewBox="0 0 24 24"
-						tw="w-6 h-6 mx-6 text-vk fill-current"
+						tw="w-6 h-6 mx-4 md:mx-6 text-vk fill-current"
 						xmlns="http://www.w3.org/2000/svg"
 					>
 						<title>VK icon</title>
@@ -46,7 +46,7 @@ const Footer = () => {
 					<svg
 						role="img"
 						viewBox="0 0 24 24"
-						tw="w-6 h-6 mx-6 text-twitter fill-current"
+						tw="w-6 h-6 mx-4 md:mx-6 text-twitter fill-current"
 						xmlns="http://www.w3.org/2000/svg"
 					>
 						<title>Twitter icon</title>

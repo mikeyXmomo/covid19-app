@@ -4,11 +4,11 @@ import 'twin.macro'
 const Info = () => {
 	return (
 		<div tw="w-full h-auto bg-white flex justify-center items-center py-12">
-			<div tw="w-4/5 flex justify-between items-center py-6">
-				<div tw="w-1/2 flex justify-center items-start">
+			<div tw="w-4/5 flex md:flex-row flex-col justify-between items-center py-6">
+				<div tw="md:w-1/2 w-full flex justify-center items-start">
 					<img src="/corona-virus.png" alt="Corona Virus Illustration" tw="w-5/6" />
 				</div>
-				<div tw="w-1/2 flex flex-col flex-wrap justify-start items-start">
+				<div tw="md:w-1/2 w-full flex flex-col flex-wrap justify-start items-start">
 					<StyledH2 smaller>What is Covid-19</StyledH2>
 					<StyledH1 smaller>CoronaVirus</StyledH1>
 					<StyledP smaller>

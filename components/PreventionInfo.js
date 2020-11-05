@@ -4,8 +4,8 @@ import tw, {css} from 'twin.macro'
 const PreventionInfo = ({number, title, subtitle, imageUrl, imageStart}) => {
 	return (
 		<div tw="w-full h-auto flex justify-center items-center py-8">
-			<div css={tw`w-4/5 h-auto justify-center items-center`, imageStart ? tw`flex flex-row-reverse` : tw`flex flex-row`}>
-				<div tw="w-2/3 flex flex-row justify-start items-start">
+			<div css={tw`w-4/5 h-auto justify-center items-center`, imageStart ? tw`flex flex-col-reverse md:flex-row-reverse` : tw`flex flex-col-reverse md:flex-row`}>
+				<div tw="w-full md:w-2/3 flex flex-row justify-start items-start">
 					<div tw="w-12 bg-red-200 mt-4 h-auto rounded-full flex justify-center items-center">
 						<StyledH2 smaller>{number}</StyledH2>
 					</div>
@@ -16,8 +16,8 @@ const PreventionInfo = ({number, title, subtitle, imageUrl, imageStart}) => {
 						</StyledP>
 					</div>
 				</div>
-				<div tw="w-1/3 flex justify-center items-center">
-                    <img src={imageUrl} tw="w-full h-full" />
+				<div tw="w-full md:w-1/3 flex justify-center items-center">
+                    <img src={imageUrl} tw="w-2/3 md:w-full h-full" />
                 </div>
 			</div>
 		</div>

@@ -9,7 +9,7 @@ const Nav = () => {
           <img alt="COVID19 App Logo" src="/Logo.svg" tw="w-4/5" />
         </div>
         <div tw="flex flex-row space-x-6">
-          <ul tw="list-none flex flex-row justify-center items-center">
+          <ul tw="hidden list-none md:flex flex-row justify-center items-center">
             <li tw="text-lg px-4 text-green-999">Overview</li>
             <li tw="text-lg px-4 text-green-999">Contagion</li>
             <li tw="text-lg px-4 text-green-999">Symptoms</li>
